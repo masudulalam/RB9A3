@@ -29,9 +29,12 @@
                         'design-primary': 'rgb(171, 239, 95)',
                         'design-secondary': 'rgba(171, 239, 95, 0.5)',
                         'design-tertiary': 'rgba(171, 239, 95, 0.2)',
+                        'grey-1': 'rgb(233, 233, 233)',
                         'grey-3': 'rgb(160, 160, 160)',
+                        'grey-4': 'rgb(115, 115, 115)',
                         'grey-5': 'rgb(73, 73, 73)',
                         'grey-6': 'rgb(33, 33, 33)',
+                        'grey-7': 'rgb(28, 28, 28)',
                     }
                 }
             }
@@ -97,8 +100,8 @@
                             d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
                     </svg>
                     <!-- Button + Logo -->
-                    <a class="btn bg-design-primary">Book Consult <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                    <a class="btn bg-design-primary rounded-3xl">Book Consult <svg xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                             class="size-6 border rounded-full bg-black text-white p-1">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
@@ -285,7 +288,38 @@
     </main>
 
     <!-- Footer Section -->
-    <footer></footer>
+    <footer class="footer footer-center bg-grey-7 text-base-content rounded sm:py-16 lg:py-24">
+        <div>
+            <a class="btn btn-ghost text-xl"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                class="size-6 bg-design-primary border rounded-full p-1">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+            </svg>
+            <p class="text-3xl text-grey-1 font-extrabold">Rinterio</p></a>
+            <p class="pt-4 sm:pb-7 lg:pb-12 font-medium sm:text-sm text-grey-4">
+                The barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal accents.
+            </p>
+        </div>
+        <nav class="grid grid-flow-col gap-4 text-grey-1 justify-around">
+            <a class="link link-hover">Home</a>
+            <a class="link link-hover">Services</a>
+            <a class="link link-hover">Portfolio</a>
+            <a class="link link-hover">Blogs</a>
+            <a class="link link-hover">Contact Us</a>
+        </nav>
+        
+        <aside>
+            <!-- Button + Logo -->
+            <a class="btn sm:w-full bg-design-primary rounded-3xl text-xl font-extrabold text-grey-7">Book Consult <svg xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                    class="size-6 border rounded-full bg-black text-white p-1">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                </svg>
+            </a>
+        </aside>
+    </footer>
 </body>
 
 </html>
