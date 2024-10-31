@@ -28,6 +28,8 @@
                         clifford: '#da373d',
                         'design-primary': 'rgb(171, 239, 95)',
                         'design-secondary': 'rgba(171, 239, 95, 0.5)',
+                        'grey-5': 'rgb(73, 73, 73)',
+                        'grey-6': 'rgb(33, 33, 33)',
                     }
                 }
             }
@@ -109,18 +111,18 @@
                 <div class="hero-content text-center">
                     <div class="space-y-6">
                         <img class="mx-auto" src="./assets/banner.png" alt="">
-                        <h1 class="text-5xl font-bold">A barn house of this design has a striking appearance</h1>
-                        <p class="py-6">
+                        <h1 class="sm:text-3xl lg:text-5xl font-bold">A barn house of this design has a striking appearance</h1>
+                        <p class="sm:text-sm text-base font-medium py-6">
                             The barn house captivates with its blend of rustic charm and modern sophistication,
                             featuring weathered wood, sleek metal accents, and large windows that flood the space with
                             natural light.
                         </p>
-                        <button class="btn bg-design-secondary text-black w-full lg:w-auto">View Details<svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                            class="size-6 bg-design-primary border rounded-full p-1">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                        </svg></button>
+                        <button class="btn bg-design-secondary text-black w-full lg:w-auto rounded-3xl">View Details<svg
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6 bg-design-primary border rounded-full p-1">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                            </svg></button>
                     </div>
                 </div>
             </div>
@@ -128,39 +130,45 @@
     </header>
 
     <!-- Main Section -->
-    <main class="container mx-auto">
+    <main class="container mx-auto bg-base-200">
         <!-- About Us Section -->
-        <section class="my-10 lg:my-24">
+        <section class="my-10 lg:my-24 relative">
             <div class="hero bg-base-200 py-8 lg:py-24">
                 <div class="hero-content flex-col-reverse lg:flex-row-reverse gap-9">
                     <img src="./assets/Rectangle.png" class="rounded-lg shadow-2xl" />
-                    <div class="space-y-5">
-                        <button class="btn bg-white rounded-3xl">About Us</button>
-                        <h1 class="text-4xl font-bold">We design thoughtful, liveable spaces</h1>
-                        <p class="py-6 font-medium">
+                    <div class="space-y-5 sm:text-center lg:text-left">
+                        <img class="hidden lg:absolute lg:top-20 lg:left-16" src="./assets/Vector.png" alt="">
+                        <button class="btn bg-white rounded-3xl"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                            </svg>
+                            About Us</button>
+                        <h1 class="sm:text-2xl lg:text-4xl font-bold text-grey-6">We design thoughtful, liveable spaces</h1>
+                        <p class="py-6 sm:text-sm lg:text-base font-medium">
                             The barn house captivates with its blend of rustic charm and
                             modern sophistication, featuring weathered wood, sleek metal accents.
                         </p>
                         <!-- Card 1 -->
                         <div class="card card-side bg-base-100 shadow-xl pl-6">
                             <figure>
-                                <img src="./assets/commercial.png"
-                                    alt="Image" />
+                                <img src="./assets/commercial.png" alt="Image" />
                             </figure>
                             <div class="card-body">
-                                <h2 class="card-title text-xl font-extrabold">Commercial</h2>
-                                <p class="font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
+                                <h2 class="card-title sm:text-base lg:text-xl font-extrabold">Commercial</h2>
+                                <p class="font-medium">The barn house captivates with its blend of rustic charm and
+                                    modern.</p>
                             </div>
                         </div>
                         <!-- Card 2 -->
                         <div class="card card-side bg-base-100 shadow-xl pl-6">
                             <figure>
-                                <img src="./assets/residential.png"
-                                    alt="Image" />
+                                <img src="./assets/residential.png" alt="Image" />
                             </figure>
                             <div class="card-body">
-                                <h2 class="card-title text-xl font-extrabold">Residential</h2>
-                                <p class="font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
+                                <h2 class="card-title sm:text-base lg:text-xl font-extrabold">Residential</h2>
+                                <p class="font-medium">The barn house captivates with its blend of rustic charm and
+                                    modern.</p>
                             </div>
                         </div>
                     </div>
@@ -168,6 +176,75 @@
             </div>
         </section>
 
+        <!-- Our Works Section -->
+        <section>
+            <div class="text-center">
+                <button class="btn bg-white rounded-3xl text-base text-grey-5 mb-4"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                    </svg>
+                    How we works</button>
+                <h1 class="sm:text-3xl lg:text-4xl text-grey-6 font-bold">Our Works Process</h1>
+                <p class="py-6 font-medium sm:text-sm text-grey-5">
+                    The barn house captivates with its blend of rustic charm and
+                    modern sophistication, featuring weathered wood, sleek metal accents.
+                </p>
+                <!-- Card Container -->
+                <div class="grid sm:grid-cols-1 lg:grid-cols-4 gap-6 mt-8">
+                    <!-- Card 1 -->
+                    <div class="bg-pink-200 text-left rounded-3xl">
+                        <figure class="">
+                            <img class="pl-6 pt-6" src="./assets/concept.png"
+                                alt="Image" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title font-extrabold">Concept</h2>
+                            <p class="text-grey-5">The barn house captivates with its blend of rustic charm and modern.</p>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="bg-yellow-200 text-left rounded-3xl">
+                        <figure class="">
+                            <img class="pl-6 pt-6" src="./assets/flow-chart.png"
+                                alt="Image" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title font-extrabold">Design Process</h2>
+                            <p class="text-grey-5">The barn house captivates with its blend of rustic charm and modern.</p>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="bg-teal-200 text-left rounded-3xl">
+                        <figure class="">
+                            <img class="pl-6 pt-6" src="./assets/vision.png"
+                                alt="Image" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title font-extrabold">Supervision</h2>
+                            <p class="text-grey-5">The barn house captivates with its blend of rustic charm and modern.</p>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="bg-blue-400 text-left rounded-3xl">
+                        <figure class="">
+                            <img class="pl-6 pt-6" src="./assets/budget-planning.png"
+                                alt="Image" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title font-extrabold">Budget Planning</h2>
+                            <p class="text-grey-5">The barn house captivates with its blend of rustic charm and modern.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Latest Portfolio Section -->
+        <section></section>
+
+        <!-- Let’s Discuss Section -->
+        <section></section>
     </main>
 
     <!-- Footer Section -->
